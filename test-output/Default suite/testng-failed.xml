@@ -3,13 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.amazon.testcases.HomapageTestcase">
+      <class name="com.amazon.testcases.HeaderOptionsTestCase">
         <methods>
-          <include name="LandedOnAmazonHomepage"/>
+          <include name="selectComputers"/>
+          <include name="selectMobiles"/>
+          <include name="selectFashion"/>
+          <include name="selectNewrelease"/>
+          <include name="launchbrowser"/>
+          <include name="selectHomeandKitchen"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="selectElectronis"/>
         </methods>
-      </class> <!-- com.amazon.testcases.HomapageTestcase -->
+      </class> <!-- com.amazon.testcases.HeaderOptionsTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

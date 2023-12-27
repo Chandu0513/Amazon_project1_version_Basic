@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-27T14:33:29 IST" name="Default suite" finished-at="2023-12-27T14:33:32 IST" duration-ms="2862">
+  <suite started-at="2023-12-27T19:15:50 IST" name="Default suite" finished-at="2023-12-27T19:16:24 IST" duration-ms="34217">
     <groups>
     </groups>
-    <test started-at="2023-12-27T14:33:29 IST" name="Default test" finished-at="2023-12-27T14:33:32 IST" duration-ms="2862">
-      <class name="com.amazon.testcases.HomapageTestcase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.testcases.HomapageTestcase@56620197]" started-at="2023-12-27T14:33:29 IST" name="setUp" finished-at="2023-12-27T14:33:31 IST" duration-ms="2306" status="PASS">
+    <test started-at="2023-12-27T19:15:50 IST" name="Default test" finished-at="2023-12-27T19:16:24 IST" duration-ms="34217">
+      <class name="com.amazon.testcases.HeaderOptionsTestCase">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:com.amazon.testcases.HeaderOptionsTestCase@4f6ee6e4]" started-at="2023-12-27T19:15:50 IST" name="launchbrowser" finished-at="2023-12-27T19:15:53 IST" duration-ms="2916" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LandedOnAmazonHomepage()[pri:0, instance:com.amazon.testcases.HomapageTestcase@56620197]" started-at="2023-12-27T14:33:31 IST" name="LandedOnAmazonHomepage" finished-at="2023-12-27T14:33:32 IST" duration-ms="435" status="PASS">
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="selectComputers()[pri:0, instance:com.amazon.testcases.HeaderOptionsTestCase@4f6ee6e4]" started-at="2023-12-27T19:15:53 IST" name="selectComputers" finished-at="2023-12-27T19:15:55 IST" duration-ms="2515" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LandedOnAmazonHomepage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.testcases.HomapageTestcase@56620197]" started-at="2023-12-27T14:33:32 IST" name="tearDown" finished-at="2023-12-27T14:33:32 IST" duration-ms="97" status="PASS">
+        </test-method> <!-- selectComputers -->
+        <test-method signature="selectElectronis()[pri:0, instance:com.amazon.testcases.HeaderOptionsTestCase@4f6ee6e4]" started-at="2023-12-27T19:15:55 IST" name="selectElectronis" finished-at="2023-12-27T19:16:06 IST" duration-ms="10552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectElectronis -->
+        <test-method signature="selectFashion()[pri:0, instance:com.amazon.testcases.HeaderOptionsTestCase@4f6ee6e4]" started-at="2023-12-27T19:16:06 IST" name="selectFashion" finished-at="2023-12-27T19:16:15 IST" duration-ms="9018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectFashion -->
+        <test-method signature="selectHomeandKitchen()[pri:0, instance:com.amazon.testcases.HeaderOptionsTestCase@4f6ee6e4]" started-at="2023-12-27T19:16:15 IST" name="selectHomeandKitchen" finished-at="2023-12-27T19:16:18 IST" duration-ms="2471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectHomeandKitchen -->
+        <test-method signature="selectMobiles()[pri:0, instance:com.amazon.testcases.HeaderOptionsTestCase@4f6ee6e4]" started-at="2023-12-27T19:16:18 IST" name="selectMobiles" finished-at="2023-12-27T19:16:22 IST" duration-ms="4003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectMobiles -->
+        <test-method signature="selectNewrelease()[pri:0, instance:com.amazon.testcases.HeaderOptionsTestCase@4f6ee6e4]" started-at="2023-12-27T19:16:22 IST" name="selectNewrelease" finished-at="2023-12-27T19:16:24 IST" duration-ms="2305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectNewrelease -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.testcases.HeaderOptionsTestCase@4f6ee6e4]" started-at="2023-12-27T19:16:24 IST" name="tearDown" finished-at="2023-12-27T19:16:24 IST" duration-ms="399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.amazon.testcases.HomapageTestcase -->
+      </class> <!-- com.amazon.testcases.HeaderOptionsTestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -145,8 +145,15 @@ public class TestUtilitys extends TestBaseclass{
 			clicker.contextClick(ele).perform();
 			
 	}
+
+
+public void Zoomout() {
+	launchBrowser();
+ JavascriptExecutor js = (JavascriptExecutor)driver;
+ String zoomoutchrome = "document.body.style.zoom = '40.0%";
+ js.executeScript(zoomoutchrome);
 }
-		
+}	
 	
 
 

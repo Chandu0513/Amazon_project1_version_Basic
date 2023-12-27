@@ -1,6 +1,5 @@
 package com.amazon.testcases;
 
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -34,12 +33,12 @@ public class HomapageTestcase extends TestBaseclass {
 	}
 	
 	@Test
-	public void LandedOnAmazonHomepage() throws IOException
+	public void LandedOnAmazonHomepage()
 	{
 		
 		String homePageTitle = homepageObj.verifyHomePageTitle();
 		Assert.assertEquals(homePageTitle, "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in","Home page title not matched");
-		testUtil .takeScreenshotAtEndOfTest();
+		
 		
 		
 		

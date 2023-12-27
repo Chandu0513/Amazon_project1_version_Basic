@@ -1,20 +1,32 @@
 package com.amazon.qa.pages;
 
 import static org.testng.Assert.assertEquals;
-import org.openqa.selenium.By;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.ClickAction;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.amazon.qa.base.TestBaseclass;
 
 public class Headeroptions extends TestBaseclass {
 
 	TestBaseclass obj = new TestBaseclass();
+	
+	
 
 	@FindBy(xpath = "//a[normalize-space()='Electronics']")
 	WebElement Electronics;
@@ -39,9 +51,14 @@ public class Headeroptions extends TestBaseclass {
 	
 	@FindBy(xpath = "//a[normalize-space()='Mobiles']")
 	WebElement Mobiles;
-
+	
+	@FindBy(xpath ="//div//span[@id='nav-search-label-id']") 
+	WebElement dropdownValue;
 
 	//Actions
+	
+	
+	
 
 	public Headeroptions()
 	{
@@ -54,9 +71,20 @@ public class Headeroptions extends TestBaseclass {
 		PageFactory.initElements(TestBaseclass.getDriver(),this);
 	}
 
-
-
+	public void Zoomout() throws AWTException {
+		
+		for(int i=0; i<5; i++) {
+	        
+		       Robot robot =new Robot();
+		       robot.keyPress(KeyEvent.VK_CONTROL);
+		       robot.keyPress(KeyEvent.VK_SUBTRACT);
+		       robot.keyRelease(KeyEvent.VK_SUBTRACT);
+		       robot.keyRelease(KeyEvent.VK_CONTROL);
+		}
+			}
+	
 	public void HeaderlistElectronics() {
+		
 		Electronics.click();
 
 		WebElement electronicsInDropdown = driver.findElement(By.xpath("//span[text()='Electronics']"));
@@ -112,9 +140,10 @@ public class Headeroptions extends TestBaseclass {
 			System.out.println("Verification Failed: All is not displayed in the global dropdown.");
 		}
 	}
-	
+
 
 	
+
 	public void HeaderlistMobiles() {
 		Mobiles.click();
 
